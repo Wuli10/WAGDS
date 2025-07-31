@@ -14,7 +14,7 @@ Code implementation for our paper.
 - AGD20K: You can find it [here](https://github.com/lhc1224/Cross-View-AG/tree/main/code/cvpr).
 - HICO-IIF: You can find it [here](https://github.com/xulingjing88/WSMA/blob/main/README.md).
 
-Download the dataset and place it in the dataset/AGD20k
+Download the dataset and place it in the dataset/AGD20K
 
 And you need to process the data to get the label data used for test:
 
