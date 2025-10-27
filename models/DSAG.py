@@ -108,9 +108,7 @@ class DSAG(nn.Module):
             cam = ego_feature.mean(1)
             cam = cam.view(batch, h, w)
 
-            # cam_here = self.batch_minmax_normalize(cam)
-            # loss_count = torch.sum(cam_here > 0.5).item() / cam.numel()
-            # loss_count = torch.tensor(loss_count, device=cam.device)
+
             
             return exo_score, ego_score, logits_per_text, logits_per_image, logits_per_text_exo, logits_per_image_exo, sim_loss, cam, egocentric_branch, mu_att
         else:
@@ -161,10 +159,6 @@ class DSAG(nn.Module):
 
             cam = ego_feature.mean(1)
             cam = cam.view(batch, h, w)
-
-            # cam_here = self.batch_minmax_normalize(cam)
-            # loss_count = torch.sum(cam_here > 0.5).item() / cam.numel()
-            # loss_count = torch.tensor(loss_count, device=cam.device)
 
 
             return cam, egocentric_branch, mu_att

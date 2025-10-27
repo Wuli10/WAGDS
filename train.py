@@ -23,10 +23,10 @@ torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--data_root', type=str, default='data_path') #data_path(In addition, there is GT_path that needs to be set on line 214 of this file.)
+parser.add_argument('--data_root', type=str, default='data_path') #data_path(In addition, there is GT_path)
 parser.add_argument('--model_name', type=str, default='model')
 parser.add_argument('--save_root', type=str, default='save_models')
-parser.add_argument("--divide", type=str, default="Unseen") #"Seen" or "Unseen" or "HICO-IIF"
+parser.add_argument("--divide", type=str, default="Unseen") #"Seen" or "Unseen" 
 parser.add_argument('--crop_size', type=int, default=224)
 parser.add_argument('--resize_size', type=int, default=256)
 parser.add_argument('--num_workers', type=int, default=8)

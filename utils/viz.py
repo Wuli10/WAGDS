@@ -108,7 +108,6 @@ def viz_pred_test1(args, image, ego_pred, GT_mask, aff, obj, img_name,type_=None
     plt.savefig(fig_name, bbox_inches='tight', dpi=300)
     plt.close()
 
-
     # plt.figure(figsize=(5, 6))
     # plt.imshow(gt_result)
     # plt.axis('off')

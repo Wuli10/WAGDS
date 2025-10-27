@@ -41,8 +41,8 @@ class TrainData(data.Dataset):
                              "swing", "take_photo", "throw", "type_on", "wash"]
 
             self.object_list = ['skateboard', 'bottle', 'cup', 'knife', 'laptop', 'soccer_ball', 'scissors', 'hammer', 'badminton_racket', 'skis', 'tennis_racket', 'baseball', 'punching_bag', 'frisbee', 'bed', 'cell_phone', 'keyboard', 'basketball', 'motorcycle', 'orange', 'banana', 'broccoli', 'snowboard', 'chair', 'bicycle', 'apple', 'golf_clubs', 'bowl', 'javelin', 'suitcase', 'book', 'couch', 'carrot', 'oven', 'axe', 'toothbrush', 'rugby_ball', 'wine_glass', 'camera', 'bench', 'fork', 'microwave', 'surfboard', 'discus', 'baseball_bat', 'refrigerator', 'hot_dog']
-        else: # HICO-IIF
-            self.aff_list = ['cut_with', 'drink_with', 'hold', 'open', 'pour', 'sip', 'stick', 'stir', 'swing', 'type_on']
+        # else: # HICO-IIF
+        #     self.aff_list = ['cut_with', 'drink_with', 'hold', 'open', 'pour', 'sip', 'stick', 'stir', 'swing', 'type_on']
 
         self.transform = transforms.Compose([
             transforms.Resize((crop_size, crop_size)),

@@ -112,7 +112,7 @@ class PromptLearner(nn.Module):
 
         self.n_cls = n_cls
         self.n_ctx = n_ctx
-        self.tokenized_prompts = tokenized_prompts  # torch.Tensor
+        self.tokenized_prompts = tokenized_prompts  
         self.name_lens = name_lens
         self.class_token_position = 'end'
 
@@ -272,8 +272,8 @@ class Model(nn.Module):
                              "eat", "hit", "hold", "jump", "kick", "lie_on", "open", "peel",
                              "pick_up", "pour", "push", "ride", "sip", "sit_on", "stick",
                              "swing", "take_photo", "throw", "type_on", "wash"]
-        else: # HICO-IIF
-            self.classnames = ['cut_with', 'drink_with', 'hold', 'open', 'pour', 'sip', 'stick', 'stir', 'swing', 'type_on']
+        # else: # HICO-IIF
+        #     self.classnames = ['cut_with', 'drink_with', 'hold', 'open', 'pour', 'sip', 'stick', 'stir', 'swing', 'type_on']
         
         # dino-v2
         self.dino_model = torch.hub.load('./dinov2', self.dino_pretrained, source='local').cuda()

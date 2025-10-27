@@ -12,7 +12,6 @@ Code implementation for our paper.
 ## Datasets
 
 - AGD20K: You can find it [here](https://github.com/lhc1224/Cross-View-AG/tree/main/code/cvpr).
-- HICO-IIF: You can find it [here](https://github.com/xulingjing88/WSMA/blob/main/README.md).
 
 Download the dataset and place it in the dataset/AGD20K
 
@@ -31,9 +30,9 @@ Clone DINOv2 and it will be downloaded automatically in the training code.
 ```git clone https://github.com/facebookresearch/dinov2.git```
 
 
-```python train.py --data_root dataset/AGD20K --divide Unseen --save_root save_models_unseen --model_name EAGDS```
+```python train.py --data_root dataset/AGD20K --divide Unseen --save_root save_models_unseen --model_name WAGDS```
 
-```python train.py --data_root dataset/AGD20K --divide Seen --save_root save_models_seen --model_name EAGDS```
+```python train.py --data_root dataset/AGD20K --divide Seen --save_root save_models_seen --model_name WAGDS```
 
 ## Test
 

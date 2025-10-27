@@ -18,7 +18,7 @@ from utils.util import post_process_affordance_map
 parser = argparse.ArgumentParser()
 parser.add_argument('--data_root', type=str, default='data_path')
 parser.add_argument('--phase', type=str, default='test')
-parser.add_argument("--divide", type=str, default="Unseen") #"Seen" or "Unseen" or "HICO-IIF"
+parser.add_argument("--divide", type=str, default="Unseen") #"Seen" or "Unseen" 
 parser.add_argument("--model_path", type=str, default="save_models_path") # the model weight path
 parser.add_argument("--save_path", type=str, default="pred_results")
 parser.add_argument("--crop_size", type=int, default=224)

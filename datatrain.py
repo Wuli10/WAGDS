@@ -37,8 +37,8 @@ class TrainData(data.Dataset):
                              "eat", "hit", "hold", "jump", "kick", "lie_on", "open", "peel",
                              "pick_up", "pour", "push", "ride", "sip", "sit_on", "stick",
                              "swing", "take_photo", "throw", "type_on", "wash"]
-        else: # HICO-IIF
-            self.aff_list = ['cut_with', 'drink_with', 'hold', 'open', 'pour', 'sip', 'stick', 'stir', 'swing', 'type_on']
+        # else: # HICO-IIF
+        #     self.aff_list = ['cut_with', 'drink_with', 'hold', 'open', 'pour', 'sip', 'stick', 'stir', 'swing', 'type_on']
 
         self.transform = transforms.Compose([
             transforms.ToTensor(),
